@@ -1,0 +1,32 @@
+une requete a l'api directions de google coute 0.005$ ==> reduire le nombre de
+requetes est essentiel.
+300 metro stations in paris.
+
+
+RATP api ? http://www.dericbourg.net/2015/12/10/calcul-ditineraire-a-partir-des-donnees-ratp/
+On a pas acces au SYSTEME SIEL qu'ils utilisent mais on a 
+TABLE HORAIRE PRECALCULEE DES TEMPS DE TRANSIT ENTRE LES STATIONS
+
+PROBLEME ca marche que pour paris
+
+
+tmax 		temps de transport max input
+tmarche		temps de marche jusquau metro le plus proche (attention
+		s'il y en a deux ~~ equidistantes le code en choisis q'une
+		==> resultats potentiels a la poubelle)
+
+liste stations	EZ avec le tableau RATP on sort toutes les stations avec 
+		t < tmax-tmarche 
+
+zones resultat	On definit un rayon r = trestant*5km/h et on trace un cercle
+		autour de la station ==> imprecision peu importante, il va
+		falloir convertir ces zones en input pour Seloger.com
+		c'est juste pour faire joli sur la carte qu'on display avec
+		les resultats Immo
+
+
+pertinance
+des resultats	hottness du quartier ~~ prix moyen du m2 (dispo sur seloger)
+
+
+COMMENT SE FAIRE DES SOUS 
