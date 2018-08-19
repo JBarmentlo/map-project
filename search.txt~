@@ -4,7 +4,6 @@ requetes est essentiel.
 
 
 RATP api ? http://www.dericbourg.net/2015/12/10/calcul-ditineraire-a-partir-des-donnees-ratp/
-https://data.ratp.fr/explore/?sort=modified&refine.keyword=M%C3%A9tro
 On a pas acces au SYSTEME SIEL qu'ils utilisent mais on a 
 TABLE HORAIRE PRECALCULEE DES TEMPS DE TRANSIT ENTRE LES STATIONS
 
